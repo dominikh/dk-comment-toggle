@@ -15,3 +15,5 @@ diakonos:
 notes: >
   This extension provides a smart way of commenting and uncommenting code,
   depending on the current state of the selection.
+
+  It is bound to alt+; by default.
