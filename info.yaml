@@ -1,0 +1,17 @@
+name: comment-toggle
+description: Smart (un)commenting for Diakonos
+author:
+    name: Dominik Honnef
+    email: dominikho@gmx.net
+version: 1.0.0
+uris:
+    homepage: http://github.com/dominikh/dk-comment-toggle/t
+    repository: git://github.com/dominikh/dk-comment-toggle.git
+licence: GPLv3
+diakonos:
+    minimum: 0.8.11
+    tested:
+        - 0.8.11
+notes: >
+  This extension provides a smart way of commenting and uncommenting code,
+  depending on the current state of the selection.
