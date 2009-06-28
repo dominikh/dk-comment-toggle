@@ -14,7 +14,7 @@ module Diakonos
       if not selecting?
         # TODO: dont append a comment if we already have one appended
         line = selected_lines[0]
-        line << "#{comment_begin} "
+        line << " #{comment_begin}"
         line << comment_end unless comment_end.empty?
       else
         mark = selection_mark
