@@ -5,7 +5,7 @@ author:
     email: dominikho@gmx.net
 version: 1.0.0
 uris:
-    homepage: http://github.com/dominikh/dk-comment-toggle/t
+    homepage: http://github.com/dominikh/dk-comment-toggle/
     repository: git://github.com/dominikh/dk-comment-toggle.git
 licence: GPLv3
 diakonos:
