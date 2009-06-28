@@ -45,16 +45,20 @@ module Diakonos
       end
 
       # move the cursor to the right position
-      if row == mark.start_row
-        x = mark.start_col
-      else
-        if uncomment
-          x = mark.end_col - comment_begin.length - comment_end.length
+      if mark
+        if row == mark.start_row
+          x = mark.start_col
         else
-          x = mark.end_col + comment_begin.length + comment_end.length
+          if uncomment
+            x = mark.end_col - comment_begin.length - comment_end.length
+          else
+            x = mark.end_col + comment_begin.length + comment_end.length
+          end
         end
+        cursor_to(row, x)
+      else
+        cursor_to(@last_row, @lines[@last_row].length)
       end
-      cursor_to(row, x)
 
       remove_selection
       set_modified
