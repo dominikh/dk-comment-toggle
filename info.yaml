@@ -8,10 +8,12 @@ uris:
     homepage: http://github.com/dominikh/dk-comment-toggle/
     repository: git://github.com/dominikh/dk-comment-toggle.git
 licence: GPLv3
-diakonos:
+requirements:
+  diakonos:
     minimum: 0.8.11
     tested:
-        - 0.8.11
+      - 0.8.11
+  gems:
 notes: >
   This extension provides a smart way of commenting and uncommenting code,
   depending on the current state of the selection.
